@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon clone</title>
+    <link rel="stylesheet" href="amazon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navup">
+                <div class="navleft">
+                    <a href="#" class="amazon_logo"> </a>
+                    <a href="#" class="delivery">
+                        <span class="line1">Deliver to </span>
+                        <span class="line2">Location</span>
+                        <span class="line3"><i class="fa-solid fa-location-dot"></i></span>
+
+                    </a>
+                </div>
+                <div class="navcenter">
+                   <select name="select" class="select">
+                    <option value="all">All</option>
+                    <option value="books">Books</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="home_kitchen">Home & Kitchen</option>
+                    <option value="sports">Sports</option>
+                   </select>
+                     <input type="text" class="searchbox" placeholder="       Search Amazon.in">
+                        <button class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="navright">
+                    <div class="nav-right">
+                        <a href="#" class="language">
+                            <span class="usa"></span>
+                            <select class="language_select">
+                                <option value="en">EN</option>
+                                <option value="hi">NE</option>
+                                <option value="es">ES</option>
+                            </select>
+                        </a>
+                        <a href="#" class="sign_in">
+                            <span>Hello,sign in</span>
+                            <span>Account & List </span>
+                        </a>
+                        <a href="" class="return_and_order">
+                            <span>Returns</span>
+                            <span>& Orders</span>
+                        </a>
+                        <a href="#" class="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="cart_text">Cart</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navdown">
+                 <a href="#" class="category-item"><i class="fas fa-bars"></i> All</a>
+                <a href="#" class="category-item">Best Sellers</a>
+                <a href="randompage.html" class="category-item">Electronics</a>
+                <a href="#footers" class="category-item">Books</a>
+                <a href="#" class="category-item">Fashion</a>
+                <a href="#" class="category-item">Home & Kitchen</a>
+                <a href="#" class="category-item">Sports</a>
+                
+
+
+              </div>
+            </div>
+        
+
+        </nav>
+      
+      
+    </header>
+  
+        <div class="hero_section">
+                                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="hero.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="hero1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="hero2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="hero3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+</div>
+         
+        </div>
+            <div class="shop-section">
+
+  <div class="shop-card">
+    <h2>Shop Fashion for less</h2>
+
+    <div class="card-grid">
+      <div class="card-item">
+        <img src="shop_jens.jpg" alt="">
+        <p>Jeans Under $50</p>
+      </div>
+
+      <div class="card-item">
+        <img src="shop_tops.jpg" alt="">
+        <p>Tops Under $50</p>
+      </div>
+
+      <div class="card-item">
+        <img src="shop_dress.jpg" alt="">
+        <p>Dresses Under $50</p>
+      </div>
+
+      <div class="card-item">
+        <img src="shop_shoes.jpg" alt="">
+        <p>Shoes Under $50</p>
+      </div>
+    </div>
+
+    <a href="#">See all deals</a>
+  </div>
+
+  <div class="shop-card">
+    <h2>Get your game on</h2>
+    <img class="single-img" src="pc.jpg" alt="">
+    <a href="#">Shop gaming</a>
+  </div>
+
+  <div class="shop-card">
+    <h2>New home arrivals under $50</h2>
+
+    <div class="card-grid">
+      <div class="card-item">
+        <img src="homes_kitchen.jpg" alt="">
+        <p>Kitchen & Dining</p>
+      </div>
+
+      <div class="card-item">
+        <img src="homes_improvement.jpg" alt="">
+        <p>Home Improvement</p>
+      </div>
+
+      <div class="card-item">
+        <img src="homes_decor.jpg" alt="">
+        <p>Decor</p>
+      </div>
+
+      <div class="card-item">
+        <img src="homes_bedding.jpg" alt="">
+        <p>Bedding & Bath</p>
+      </div>
+    </div>
+
+    <a href="#">Explore more</a>
+  </div>
+
+  <div class="shop-card">
+    <h2>Shop home essentials</h2>
+
+    <div class="card-grid">
+      <div class="card-item">
+        <img src="essentials_cleaning.jpg" alt="">
+        <p>Cleaning tools</p>
+      </div>
+
+      <div class="card-item">
+        <img src="essentials_storage.jpg" alt="">
+        <p>Home storage</p>
+      </div>
+
+      <div class="card-item">
+        <img src="essentials_decor.jpg" alt="">
+        <p>Decor</p>
+      </div>
+
+      <div class="card-item">
+        <img src="essentials_bedding.jpg" alt="">
+        <p>Bedding</p>
+      </div>
+    </div>
+
+    <a href="#">See more</a>
+  </div>
+  <div class="shop-card">
+    <h2>Shop Fashion for less</h2>
+
+    <div class="card-grid">
+      <div class="card-item">
+        <img src="shop_jens.jpg" alt="">
+        <p>Jeans Under $50</p>
+      </div>
+
+      <div class="card-item">
+        <img src="shop_tops.jpg" alt="">
+        <p>Tops Under $50</p>
+      </div>
+
+      <div class="card-item">
+        <img src="shop_dress.jpg" alt="">
+        <p>Dresses Under $50</p>
+      </div>
+
+      <div class="card-item">
+        <img src="shop_shoes.jpg" alt="">
+        <p>Shoes Under $50</p>
+      </div>
+    </div>
+
+    <a href="#">See all deals</a>
+  </div>
+
+  <div class="shop-card">
+    <h2>Get your game on</h2>
+    <img class="single-img" src="pc.jpg" alt="">
+    <a href="#">Shop gaming</a>
+  </div>
+
+  <div class="shop-card">
+    <h2>New home arrivals under $50</h2>
+
+    <div class="card-grid">
+      <div class="card-item">
+        <img src="homes_kitchen.jpg" alt="">
+        <p>Kitchen & Dining</p>
+      </div>
+
+      <div class="card-item">
+        <img src="homes_improvement.jpg" alt="">
+        <p>Home Improvement</p>
+      </div>
+
+      <div class="card-item">
+        <img src="homes_decor.jpg" alt="">
+        <p>Decor</p>
+      </div>
+
+      <div class="card-item">
+        <img src="homes_bedding.jpg" alt="">
+        <p>Bedding & Bath</p>
+      </div>
+    </div>
+
+    <a href="#">Explore more</a>
+  </div>
+
+  <div class="shop-card">
+    <h2>Shop home essentials</h2>
+
+    <div class="card-grid">
+      <div class="card-item">
+        <img src="essentials_cleaning.jpg" alt="">
+        <p>Cleaning tools</p>
+      </div>
+
+      <div class="card-item">
+        <img src="essentials_storage.jpg" alt="">
+        <p>Home storage</p>
+      </div>
+
+      <div class="card-item">
+        <img src="essentials_decor.jpg" alt="">
+        <p>Decor</p>
+      </div>
+
+      <div class="card-item">
+        <img src="essentials_bedding.jpg" alt="">
+        <p>Bedding</p>
+      </div>
+    </div>
+
+    <a href="#">See more</a>
+  </div>
+  <div class="shop-card">
+    <h2>Shop Fashion for less</h2>
+
+    <div class="card-grid">
+      <div class="card-item">
+        <img src="shop_jens.jpg" alt="">
+        <p>Jeans Under $50</p>
+      </div>
+
+      <div class="card-item">
+        <img src="shop_tops.jpg" alt="">
+        <p>Tops Under $50</p>
+      </div>
+
+      <div class="card-item">
+        <img src="shop_dress.jpg" alt="">
+        <p>Dresses Under $50</p>
+      </div>
+
+      <div class="card-item">
+        <img src="shop_shoes.jpg" alt="">
+        <p>Shoes Under $50</p>
+      </div>
+    </div>
+
+    <a href="#">See all deals</a>
+  </div>
+
+  <div class="shop-card">
+    <h2>Get your game on</h2>
+    <img class="single-img" src="pc.jpg" alt="">
+    <a href="#">Shop gaming</a>
+  </div>
+
+  <div class="shop-card">
+    <h2>New home arrivals under $50</h2>
+
+    <div class="card-grid">
+      <div class="card-item">
+        <img src="homes_kitchen.jpg" alt="">
+        <p>Kitchen & Dining</p>
+      </div>
+
+      <div class="card-item">
+        <img src="homes_improvement.jpg" alt="">
+        <p>Home Improvement</p>
+      </div>
+
+      <div class="card-item">
+        <img src="homes_decor.jpg" alt="">
+        <p>Decor</p>
+      </div>
+
+      <div class="card-item">
+        <img src="homes_bedding.jpg" alt="">
+        <p>Bedding & Bath</p>
+      </div>
+    </div>
+
+    <a href="#">Explore more</a>
+  </div>
+
+  <div class="shop-card">
+    <h2>Shop home essentials</h2>
+
+    <div class="card-grid">
+      <div class="card-item">
+        <img src="essentials_cleaning.jpg" alt="">
+        <p>Cleaning tools</p>
+      </div>
+
+      <div class="card-item">
+        <img src="essentials_storage.jpg" alt="">
+        <p>Home storage</p>
+      </div>
+
+      <div class="card-item">
+        <img src="essentials_decor.jpg" alt="">
+        <p>Decor</p>
+      </div>
+
+      <div class="card-item">
+        <img src="essentials_bedding.jpg" alt="">
+        <p>Bedding</p>
+      </div>
+    </div>
+
+    <a href="#">See more</a>
+  </div>
+
+       </div>
+            
+<!-- footer section start
+  -->
+       <footer class="footer" id="footers">
+
+  <!-- TOP -->
+  <div class="footer-top" onclick="scrollToTop()">
+    Back to top
+  </div>
+
+  <!-- CENTER -->
+  <div class="footer-center">
+    <div class="footer-col">
+      <h4>Get to Know Us</h4>
+      <a href="#">About Amazon</a>
+      <a href="#">Careers</a>
+      <a href="#">Press Releases</a>
+      <a href="#">Amazon Science</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Connect with Us</h4>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Make Money with Us</h4>
+      <a href="#">Sell on Amazon</a>
+      <a href="#">Affiliate Program</a>
+      <a href="#">Advertise Your Products</a>
+      <a href="#">Self-Publish</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Let Us Help You</h4>
+      <a href="#">Your Account</a>
+      <a href="#">Returns Centre</a>
+      <a href="#">Help</a>
+    </div>
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    © 2025 Amazon Clone. All Rights Reserved.
+  </div>
+
+</footer>
+<!-- footer section end  -->
+
+        
+
+    
+</body>
+</html>
